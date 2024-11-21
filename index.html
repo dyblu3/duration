@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Durasi Waktu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link ke jQuery dan jQuery UI CSS untuk kalender -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Durasi Waktu</h1>
+
+        <div class="input-container">
+            <label for="start-date">Tanggal dan Waktu Mulai:</label>
+            <input type="text" id="start-date" placeholder="DD/MM/YYYY">
+            <input type="time" id="start-time">
+        </div>
+
+        <div class="input-container">
+            <label for="end-date">Tanggal dan Waktu Selesai:</label>
+            <input type="text" id="end-date" placeholder="DD/MM/YYYY">
+            <input type="time" id="end-time">
+        </div>
+
+        <button onclick="calculateDuration()">Hitung Durasi</button>
+        
+        <div class="result">
+            <h2>Durasi:</h2>
+            <p id="duration-result">0 tahun 0 bulan 0 hari 0 jam 0 menit</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
